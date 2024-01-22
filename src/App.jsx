@@ -1,8 +1,13 @@
+import HeroSection from "./component/HeroSection";
+import NavSection from "./component/NavSection";
 
 function App() {
   return (
-    <div>App</div>
-  )
+    <div>
+      <NavSection />
+      <HeroSection />
+    </div>
+  );
 }
 
-export default App
+export default App;

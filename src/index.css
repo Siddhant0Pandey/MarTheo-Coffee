@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Mobile Responsive */
+
+@media (max-width: 480px) {
+  nav {
+    gap: 1rem;
+    padding: 1rem 0.4rem;
+  }
+  button {
+    padding: 0.2rem;
+    border: 1px transparent;
+  }
+  .online-btn {
+    border: 1px solid var(--primary-color);
+    background-color: var(--white);
+    color: var(--primary-color);
+    font-size: small;
+    /* transition: all 0.2s ease-in; */
+  }
+  .menu-btn {
+    font-size: small;
+    display: flex;
+    padding: 0.8rem 0.2rem;
+  }
+  .nav-bar h1 {
+    font-size: medium;
+  }
+}
