@@ -2,12 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Root elements */
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: "Beth Ellen", cursive; */
+  font-family: poppins;
+}
+
+:root {
+  --primary-color: #4eac0f;
+  --secondary-color: #242423;
+  --white: #fff;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/* Hero styles */
+.hero-navlink li {
+  list-style: none;
+  font-size: small;
+}
+.hero-navlink a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+.hero-navlink a:hover {
+  color: var(--primary-color);
+}
+
 /* Mobile Responsive */
 
 @media (max-width: 480px) {
   nav {
     gap: 1rem;
     padding: 1rem 0.4rem;
+  }
+  .nav-features {
+    display: none;
   }
   button {
     padding: 0.2rem;
